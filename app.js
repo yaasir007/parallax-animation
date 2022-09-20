@@ -41,3 +41,9 @@ gsap.from("#m1", {
       x: 450,
       y: 100,
     });
+    gsap.from("#title", {
+          scrollTrigger: {
+            scrub: true
+          },
+          x: -150,
+        });
