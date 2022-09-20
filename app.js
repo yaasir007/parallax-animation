@@ -47,3 +47,9 @@ gsap.from("#m1", {
           },
           x: -150,
         });
+        gsap.from("#para", {
+          scrollTrigger: {
+            scrub: true
+          },
+          x: 150,
+        });
