@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
+  <title>Parallax Scrolling</title>
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo">DevMe</a>
+    <ul class="navigation">
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <section class="parallax">
+    <h2 class="text">Welcome Aboard</h2>
+    <img src="images/monutain_01.png" id="m1">
+    <img src="images/trees_02.png" id="t2">
+    <img src="images/monutain_02.png" id="m2">
+    <img src="images/trees_01.png" id="t1">
+    <img src="images/man.png" id="man">
+    <img src="images/plants.png" id="plants">
+  </section>
+
+  <section class="sec">
+    <h2>Parallax Scrolling</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur nulla non cum totam, in autem sed
+      cupiditate nisi aperiam repudiandae voluptates ab. Veniam nihil sunt repudiandae tempore, aperiam dolor et
+      possimus unde autem optio explicabo dignissimos qui atque nam reiciendis omnis ex aspernatur commodi deserunt quis
+      repellat eveniet adipisci. Beatae reprehenderit porro ea rem nulla amet asperiores minus distinctio, veritatis cum
+      doloribus, earum nemo eos. <br><br>Earum, aliquid nisi quasi ad debitis doloremque. Quidem illo voluptatibus
+      eligendi explicabo placeat molestiae alias pariatur! Est non quidem a illo magnam porro harum fugiat provident ut
+      ipsum obcaecati adipisci, necessitatibus placeat modi earum inventore quam architecto totam. <br><br>Voluptates
+      architecto quos voluptate, blanditiis eveniet similique animi tempore error quisquam est unde a ad nemo quod quas,
+      deleniti fugit accusantium iure! Commodi, perferendis velit? Quae tenetur delectus ducimus minus sequi repellendus
+      deserunt ea incidunt, deleniti qui est. Libero officiis neque recusandae porro sit voluptates necessitatibus
+      vitae. <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, quo quis unde dignissimos obcaecati
+      nostrum a repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique,
+      consectetur saepe? <br><br>Harum aperiam facilis eos, quia nesciunt incidunt doloremque fugiat, aliquid in quod
+      officia autem tempore nobis, sit dolores sapiente quae cum? Quis.<br><br>Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. Ex, quo quis unde dignissimos obcaecati nostrum a
+      repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique, consectetur saepe?
+      <br><br>Harum aperiam facilis eos, quia nesciunt incidunt doloremque fugiat, aliquid in quod officia autem tempore
+      nobis, sit dolores sapiente quae cum? Quis.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+      quo quis unde dignissimos obcaecati nostrum a
+      repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique, consectetur saepe?
+      <br><br>Harum aperiam facilis eos, quia nesciunt incidunt doloremque fugiat, aliquid in quod officia autem tempore
+      nobis, sit dolores sapiente quae cum? Quis.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+      quo quis unde dignissimos obcaecati nostrum a
+      repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique, consectetur saepe?
+      <br><br>Harum aperiam facilis eos, quia nesciunt incidunt doloremque fugiat, aliquid in quod officia autem tempore
+      nobis, sit dolores sapiente quae cum? Quis.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+      quo quis unde dignissimos obcaecati nostrum a
+      repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique, consectetur saepe?
+      <br><br>Harum aperiam facilis eos, quia nesciunt incidunt doloremque fugiat, aliquid in quod officia autem tempore
+      nobis, sit dolores sapiente quae cum? Quis.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+      quo quis unde dignissimos obcaecati nostrum a
+      repellendus hic praesentium exercitationem, sunt aspernatur explicabo aliquid quas! Similique, consectetur saepe?
+    </p>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+  <script>
+    gsap.from("#m1", {
+      scrollTrigger: {
+        scrub: true
+      },
+      y: 200,
+    });
+    gsap.from("#m2", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: 100,
+    });
+    gsap.from("#t2", {
+      scrollTrigger: {
+        scrub: true
+      },
+      y: 100,
+    });
+    gsap.from("#t1", {
+      scrollTrigger: {
+        scrub: true
+      },
+      y: 25,
+    });
+    gsap.from("#man", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: -75,
+    });
+    gsap.from("#plants", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: -50,
+    });
+    gsap.from(".text", {
+      scrollTrigger: {
+        scrub: true
+      },
+      x: 450,
+      y: 100,
+    });
+  </script>
+</body>
+
+</html>
